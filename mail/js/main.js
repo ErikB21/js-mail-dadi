@@ -9,9 +9,10 @@ let email = ['luca@gmail.com', 'mario@hotmail.it', 'martina@yahoo.it'];
 let richiediEmail = prompt('Inserire email');
 
 if(richiediEmail < email){
-    alert('La email inserita non è corretta!');
+    alert("ATTENZIONE! L'email inserita non è corretta!");
+    prompt("Per favore, inserire un'email valida!");
     
 } else{
-    alert('La email inserita è corretta!')
+    alert("L'email inserita è corretta!");
 }
 
