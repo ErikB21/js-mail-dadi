@@ -10,12 +10,12 @@ if(puntata >= 1 && puntata <= 6){
     const puntataComputer = Math.floor(Math.random() * 6) + 1;
 
     if(puntataComputer < puntata){
-        alert('Hai vinto tu!' + 'Scelta computer: ' + puntataComputer);
+        alert('Complimenti! Hai vinto!' + 'Scelta computer: ' + puntataComputer);
+    }else if (puntataComputer == puntata){
+        alert('Pareggio! ' + 'Scelta computer: ' + puntataComputer);      
     }else{
-        console.log(puntataComputer);
-        alert('Ha vinto il computer! ' + 'Scelta computer: ' + puntataComputer);
-        
+        alert('Peccato! Ha vinto il computer! ' + 'Scelta computer: ' + puntataComputer);
     }
 }else{
-    alert('Numero inserito non valido!');
+    alert('Valore inserito non valido!');
 }
