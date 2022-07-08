@@ -3,6 +3,7 @@
 //Se il numero scelto è superiore al numero scelto dal computer, ho vinto
 //Altrimenti vince il computer
 
+
 const puntata = Math.floor(Math.random() * 6) + 1;
 const puntataComputer = Math.floor(Math.random() * 6) + 1;
 let genera = confirm('Benvenuto, confermare per generare un numero');
@@ -19,3 +20,25 @@ if(puntata >= 1 && puntata <= 6){
 }else{
     alert('Valore inserito non valido!');
 }
+
+
+
+
+//CORREZIONE PROF
+
+/*
+const puntata = Math.floor(Math.random() * 6) + 1;
+alert('Il numero generato per il giocatore è: ' + puntata);
+
+const puntataPc = Math.floor(Math.random() * 6) + 1;
+alert('Il numero generato per il computer è: ' + puntataPc);
+
+if (puntataPc > puntata){
+    alert('Vince il computer con ' + puntataPc);
+}else if (puntata > puntataPc){
+    alert('Vince il giocatore con ' + puntata);
+}else{
+    alert('Pareggio');
+}
+
+*/

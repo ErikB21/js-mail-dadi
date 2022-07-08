@@ -1,18 +1,32 @@
 //Creo un Array con le diverse email.
-//Attraverso un Prompt dovrò richiedere l'email
+//Attraverso l'HTML dovrò richiedere l'email
 //Se l'email inserita esiste, allora darò un esito positivo
-//Altrimenti darò esito negativo, con la richiesta di una nuova email
+//Altrimenti darò esito negativo
 
 
-let email = ['erik@gmail.com', 'mike@gmail.it', 'max@gmail.it'];
+const mail = ['erik@gmail.it', 'mike@gmail.it', 'max@gmail.it'];
 
-let richiediEmail = prompt('Inserire email');
+const userMail = document.getElementById('usermail');
 
-if(richiediEmail < email){
-    alert("ATTENZIONE! L'email inserita non è corretta!");
-    prompt("Per favore, inserire un'email valida!");
-    
-} else{
-    alert("L'email inserita è corretta!");
-}
+let enter = document.getElementById('enter');
+
+let answerEnter = document.getElementById('answerEnter');
+
+
+
+enter.addEventListener('click', 
+    function() {
+        for (let i = 0; i < mail.length; i++){
+            if(i != mail || i > mail){
+                answerEnter.innerHTML = 'Accesso Negato';
+            }
+
+            if (i == mail){
+                answerEnter.innerHTML = 'Accesso Riuscito';
+            }
+        }
+    }
+);
+
+
 

@@ -4,15 +4,34 @@
 //Altrimenti darò esito negativo, con la richiesta di una nuova email
 
 
-let email = ['erik@gmail.com', 'mike@gmail.it', 'max@gmail.it'];
+/*let mail = ['erik@gmail.it', 'mike@gmail.it', 'max@gmail.it'];
 
-let richiediEmail = prompt('Inserire email');
+let richiediMail = prompt('Salve Visitatore! prego, inserire la propria Mail!');
 
-if(richiediEmail < email){
-    alert("ATTENZIONE! L'email inserita non è corretta!");
-    prompt("Per favore, inserire un'email valida!");
+if(richiediMail < mail){
+    alert("ATTENZIONE! La Mail inserita non è corretta!");
+    prompt("Per favore, inserire una Mail valida!");
     
 } else{
-    alert("L'email inserita è corretta!");
+    alert("La Mail inserita è corretta!");
+}*/
+
+/////CORREZIONE PROF
+
+const mail = ['erik@gmail.it', 'mike@gmail.it', 'max@gmail.it'];
+let richiediMail = prompt('Salve Visitatore! prego, inserire la propria Mail!');
+
+let puoiAccedere = false;
+
+for (let i = 0; i < mail.length; i++){
+    if(mail[i] == richiediMail){
+        puoiAccedere = true;
+    }
 }
 
+if(puoiAccedere == true){
+    alert('Benvenuto!');
+}else{
+    alert('Accesso negato!');
+    prompt('Inserire una Mail valida!');
+}
